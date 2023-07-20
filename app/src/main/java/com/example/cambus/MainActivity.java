@@ -12,4 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.school_home);
 
     }
+
+    public static class schoolhome {
+    }
 }

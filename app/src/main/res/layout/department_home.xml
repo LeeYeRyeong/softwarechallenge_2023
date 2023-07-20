@@ -7,78 +7,16 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/mainimageView"
+        android:id="@+id/im_maincardnews"
         android:layout_width="380dp"
         android:layout_height="300dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="57dp"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintBottom_toTopOf="@+id/hv_schoolhome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/departmentex1" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="344dp"
-        android:layout_height="18dp"
-        android:text="학과 별 공지사항"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:contentDescription="button"
-        android:gravity="center"
-        android:layout_marginHorizontal="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
-
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:backgroundTint="#00FFFFFF"
-            android:contentDescription="categori_button"
-            app:srcCompat="@drawable/categori" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:contentDescription="mainhome1"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@drawable/schoolhome" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:contentDescription="mainhome2"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@drawable/imac" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:contentDescription="userspace"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@drawable/user" />
-    </LinearLayout>
 
     <View
         android:id="@+id/view"
@@ -91,16 +29,78 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainimageView" />
+        app:layout_constraintTop_toBottomOf="@+id/im_maincardnews" />
+
+    <TextView
+        android:id="@+id/tv_memo"
+        android:layout_width="344dp"
+        android:layout_height="18dp"
+        android:text="학과 별 공지사항"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:contentDescription="button"
+        android:gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hv_schoolhome">
+
+
+        <ImageButton
+            android:id="@+id/ib_categori"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="categori_button"
+            app:srcCompat="@drawable/categori" />
+
+        <ImageButton
+            android:id="@+id/ib_schoolhome"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:contentDescription="mainhome1"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/schoolhome" />
+
+        <ImageButton
+            android:id="@+id/ib_departmenthome"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:contentDescription="mainhome2"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/imac" />
+
+        <ImageButton
+            android:id="@+id/ib_userhome"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:contentDescription="userspace"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/user" />
+    </LinearLayout>
 
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
+        android:id="@+id/hv_schoolhome"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:layout_marginTop="343dp"
         android:layout_marginBottom="26dp"
         android:contentDescription="학교별 공구 보는 화면"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -116,14 +116,14 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView1"
+                    android:id="@+id/iv_thumdnail"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="18dp"
                     android:src="@drawable/homeex2" />
 
                 <ProgressBar
-                    android:id="@+id/progressBar"
+                    android:id="@+id/FulfillmentRate"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
@@ -155,7 +155,7 @@
                     android:src="@drawable/homeex3" />
 
                 <ProgressBar
-                    android:id="@+id/progressBar1"
+                    android:id="@+id/FulfillmentRate2"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
