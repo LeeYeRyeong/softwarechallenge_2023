@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CamBus</string>
+    <string name="lod_out"><u>로그아웃</u></string>
 </resources>
