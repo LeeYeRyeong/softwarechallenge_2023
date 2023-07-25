@@ -13,10 +13,10 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="57dp"
-        app:layout_constraintBottom_toTopOf="@+id/hv_departmenthome"
+        android:src="@drawable/homeex1"
+        app:layout_constraintBottom_toTopOf="@+id/hv_schoolhome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/homeex1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_memo"
@@ -30,55 +30,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.46" />
 
-    <LinearLayout
-        android:id="@+id/menu"
+    <FrameLayout
+        android:id="@+id/menu_frame"
         android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:contentDescription="button"
-        android:gravity="center"
-        android:layout_marginHorizontal="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hv_departmenthome">
+        app:layout_constraintTop_toTopOf="@+id/ib_mainimage">
 
+    </FrameLayout>
 
-        <ImageButton
-            android:id="@+id/ib_categori"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:backgroundTint="#00FFFFFF"
-            android:contentDescription="categori_button"
-            app:srcCompat="@drawable/categori" />
-
-        <ImageButton
-            android:id="@+id/ib_schoolhome"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:contentDescription="mainhome1"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@drawable/schoolhome" />
-
-        <ImageButton
-            android:id="@+id/ib_departmenthome"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:contentDescription="mainhome2"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@drawable/imac" />
-
-        <ImageButton
-            android:id="@+id/ib_userhome"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginHorizontal="10dp"
-            android:contentDescription="userspace"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@drawable/user" />
-    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/button_clear"
+        android:contentDescription="menu"
+        app:itemIconSize="50dp"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hv_schoolhome"
+        app:menu="@menu/main_menu_bottom" />
 
     <View
         android:id="@+id/view"
@@ -94,20 +70,20 @@
         app:layout_constraintTop_toBottomOf="@+id/ib_mainimage" />
 
     <HorizontalScrollView
-        android:id="@+id/hv_departmenthome"
+        android:id="@+id/hv_schoolhome"
         android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="343dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="학교별 공구 보는 화면"
-        app:layout_constraintBottom_toTopOf="@+id/menu"
+        app:layout_constraintBottom_toTopOf="@+id/menu_bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="300dp"
             android:orientation="horizontal">
 
             <LinearLayout

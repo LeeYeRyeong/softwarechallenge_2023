@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_category"
+        android:icon="@drawable/category"
+        android:title="category"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_schoolhome"
+        android:icon="@drawable/schoolhome"
+        android:title="school_home"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_departmenthome"
+        android:icon="@drawable/imac"
+        android:title="department_home"
+        app:showAsAction="always"/>
+  >
+    <item
+        android:id="@+id/menu_user"
+        android:icon="@drawable/user"
+        android:title="user"
+        app:showAsAction="always"/>
+</menu>

@@ -21,6 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".school"/>
+        <activity android:name=".user"/>
+        <activity android:name=".department"/>
+
     </application>
 
 </manifest>
