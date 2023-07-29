@@ -19,7 +19,7 @@
         android:icon="@drawable/imac"
         android:title="department_home"
         app:showAsAction="always"/>
-  >
+
     <item
         android:id="@+id/menu_user"
         android:icon="@drawable/user"
