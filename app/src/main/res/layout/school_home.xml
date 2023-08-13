@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/iv_mainimage"
-        android:layout_width="380dp"
+    <ImageButton
+        android:id="@+id/ib_maincardnews"
+        android:layout_width="330dp"
         android:layout_height="300dp"
-
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
         android:src="@drawable/homeex1"
         app:layout_constraintBottom_toTopOf="@+id/hv_schoolhome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="button"/>
 
 
     <TextView
@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_mainimage" />
+        app:layout_constraintTop_toBottomOf="@+id/ib_maincardnews" />
 
     <HorizontalScrollView
         android:id="@+id/hv_schoolhome"
@@ -66,12 +66,13 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView1"
+                <ImageButton
+                    android:id="@+id/ib_gobuy"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="18dp"
-                    android:src="@drawable/homeex2" />
+                    android:src="@drawable/homeex2"
+                    android:contentDescription="button"/>
 
                 <ProgressBar
                     android:id="@+id/progressBar"

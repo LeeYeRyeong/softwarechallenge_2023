@@ -6,110 +6,98 @@
     android:layout_height="match_parent">
 
 
-
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="학교 공지 제목"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.069"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/line69"
-            android:layout_width="385dp"
-            android:layout_height="21dp"
-            android:layout_marginTop="8dp"
-            android:elevation="0dp"
-            android:src="@drawable/line"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleTextView" />
-
-        <ImageView
-            android:id="@+id/userikon"
-            android:layout_width="41dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="24dp"
-            android:elevation="0dp"
-            android:src="@drawable/user"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line69" />
-
-        <TextView
-            android:id="@+id/authorTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="작성자 이름"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/userikon"
-            app:layout_constraintTop_toTopOf="@id/userikon"
-            tools:layout_editor_absoluteX="64dp"
-            tools:layout_editor_absoluteY="74dp" />
-
-        <TextView
-            android:id="@+id/dateTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="28dp"
-            android:text="작성일"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="@id/authorTextView"
-            app:layout_constraintTop_toBottomOf="@id/line69" />
-
-        <TextView
-            android:id="@+id/viewsTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="256dp"
-            android:text="조회수"
-            android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/line69" />
-
-        <ImageView
-            android:id="@+id/line70"
-            android:layout_width="391dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="32dp"
-            android:elevation="0dp"
-            android:src="@drawable/line2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line69" />
-
-        <ImageView
-            android:id="@+id/mainrec"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="479dp"
+            android:layout_height="match_parent">
 
-            android:src="@drawable/mainrec"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line70" />
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="학교 공지 제목"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/line71"
-            android:layout_width="434dp"
-            android:layout_height="116dp"
-            android:layout_marginTop="492dp"
-            android:elevation="0dp"
-            android:src="@drawable/line3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line69" />
+                <ImageView
+                    android:id="@+id/line69"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="60dp"
 
+                    android:src="@drawable/line" />
 
+                <ImageView
+                    android:id="@+id/mainrec"
+                    android:layout_width="match_parent"
+                    android:layout_height="479dp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/mainrec" />
+
+                <ImageView
+                    android:id="@+id/line71"
+                    android:layout_width="434dp"
+                    android:layout_height="116dp"
+                    android:layout_marginTop="80dp"
+
+                    android:src="@drawable/line3" />
+
+                <ImageView
+                    android:id="@+id/userikon"
+                    android:layout_width="41dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/authorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자 이름"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="70dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/line70"
+                    android:layout_width="391dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="650dp"
+                    android:src="@drawable/line2" />
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="100dp"
+                    android:text="작성일"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/viewsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="조회수"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/tb_noticelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="목록"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@color/blue"/>
+
+        </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

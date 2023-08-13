@@ -23,8 +23,9 @@
 
         </activity>
         <activity android:name=".fristbuyActivity"/>
-        <activity android:name=".fristbuy_go"/>
         <activity android:name=".secondbuyActivity"/>
+        <activity android:name=".schoolnoticegoActivity"/>
+        <activity android:name=".schoolnotice"/>
     </application>
 
 </manifest>
