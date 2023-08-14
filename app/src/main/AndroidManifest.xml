@@ -26,6 +26,17 @@
         <activity android:name=".secondbuyActivity"/>
         <activity android:name=".schoolnoticegoActivity"/>
         <activity android:name=".schoolnotice"/>
+        <activity android:name=".departmentnoticego"/>
+        <activity android:name=".departmentnotice"/>
+        <activity android:name=".department_home"/>
+        <activity android:name=".editdepartment"/>
+        <activity android:name=".writego"/>
+        <activity android:name=".editschool"/>
+        <activity android:name=".userhome"/>
+        <activity android:name=".paymentcheck"/>
+        <activity android:name=".mylist"/>
+        <activity android:name=".buynotice"/>
+
     </application>
 
 </manifest>

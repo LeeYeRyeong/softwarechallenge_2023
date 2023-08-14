@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:layout_margin="10dp">
+    android:layout_marginTop="10dp">
 
     <ImageButton
-        android:id="@+id/im_maincardnews"
+        android:id="@+id/ib_maincardnews"
         android:layout_width="380dp"
         android:layout_height="300dp"
         android:layout_marginTop="10dp"
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/im_maincardnews" />
+        app:layout_constraintTop_toBottomOf="@+id/ib_maincardnews" />
 
     <TextView
         android:id="@+id/tv_memo"
@@ -102,4 +102,55 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/blue"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            >
+
+            <ImageButton
+                android:id="@+id/ib_gocategory"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:contentDescription="category"
+                app:srcCompat="@drawable/category"
+                android:background="@color/blue"/>
+
+            <ImageButton
+                android:id="@+id/ib_goschool"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:contentDescription="sch"
+                app:srcCompat="@drawable/schoolhome"
+                android:background="@color/blue"/>
+
+            <ImageButton
+                android:id="@+id/ib_godepartment"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:contentDescription="dph"
+                android:background="@color/blue"
+                app:srcCompat="@drawable/imac" />
+
+            <ImageButton
+                android:id="@+id/ib_gouser"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:contentDescription="user"
+                android:background="@color/blue"
+                app:srcCompat="@drawable/user" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>

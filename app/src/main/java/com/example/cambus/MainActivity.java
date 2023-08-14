@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton button1;
     private ImageButton button2; //학교공지로 가는 버튼
 
+    private ImageButton gouser;
+    private ImageButton godepartment;
+    private ImageButton goschool;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,5 +51,35 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
+
+            goschool = findViewById(R.id.ib_goschool);
+            goschool.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this,MainActivity.class);
+                    startActivity(intent);
+
+                }
+            });
+
+            godepartment = findViewById(R.id.ib_godepartment);
+            godepartment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this,department_home.class);
+                    startActivity(intent);
+                }
+            });
+
+            gouser = findViewById(R.id.ib_gouser);
+            gouser.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this,userhome.class);
+                    startActivity(intent);
+                }
+            });
+
     }
 }
