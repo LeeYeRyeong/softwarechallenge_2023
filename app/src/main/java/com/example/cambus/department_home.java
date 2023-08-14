@@ -11,6 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class department_home extends AppCompatActivity {
 
     private ImageButton button;
+    private ImageButton button1;
+    private Button button2; //학교공지로 가는 버튼
+
+
     private ImageButton gouser;
     private ImageButton godepartment;
     private ImageButton goschool;
@@ -28,6 +32,22 @@ public class department_home extends AppCompatActivity {
                 Intent intent = new Intent(department_home.this, departmentnoticego.class);
                 startActivity(intent);
 
+            }
+        });
+        button1 =findViewById(R.id.ib_thumdnail);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(department_home.this,fristbuyActivity.class);
+                startActivity(intent);
+            }
+        });
+        button2 = findViewById(R.id.tb_gobuy);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(department_home.this,fristbuyActivity.class);
+                startActivity(intent);
             }
         });
 
