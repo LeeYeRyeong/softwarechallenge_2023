@@ -11,13 +11,14 @@
         android:layout_width="128dp"
         android:layout_height="59dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/round_squre_blue"
         android:text="제출"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView5"
-        android:background="@drawable/round_squre_blue"/>
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
 
     <ScrollView
         android:id="@+id/scrollView5"
@@ -41,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="32dp"
-                android:text="공동 구매 글 작성"
+                android:text="학교 공동 구매 글 작성"
                 android:textSize="30dp" />
 
             <ImageView

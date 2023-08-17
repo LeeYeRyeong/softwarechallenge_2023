@@ -19,6 +19,7 @@ public class userhome extends AppCompatActivity {
     private ImageButton gouser;
     private ImageButton godepartment;
     private ImageButton goschool;
+    private ImageButton goedit;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -74,6 +75,15 @@ public class userhome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(userhome.this,userhome.class);
+                startActivity(intent);
+            }
+        });
+
+        goedit = findViewById(R.id.edit_buy);
+        goedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(userhome.this, edit_buy.class);
                 startActivity(intent);
             }
         });

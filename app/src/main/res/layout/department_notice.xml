@@ -11,7 +11,7 @@
             android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/titleTextView"
+                    android:id="@+id/textViewTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -28,21 +28,22 @@
 
                     android:src="@drawable/line" />
 
+
                 <ImageView
-                    android:id="@+id/mainrec"
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="70dp"
+                    android:scaleType="centerInside" />
+
+
+                <TextView
+                    android:id="@+id/textViewContent"
                     android:layout_width="match_parent"
-                    android:layout_height="479dp"
-                    android:layout_gravity="center"
-
-                    android:src="@drawable/mainrec" />
-
-                <ImageView
-                    android:id="@+id/line71"
-                    android:layout_width="434dp"
-                    android:layout_height="116dp"
-                    android:layout_marginTop="80dp"
-
-                    android:src="@drawable/line3" />
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTitle"
+                    android:layout_marginTop="460dp" />
 
                 <ImageView
                     android:id="@+id/userikon"
@@ -70,6 +71,7 @@
                     android:layout_marginTop="650dp"
                     android:src="@drawable/line2" />
 
+
                 <TextView
                     android:id="@+id/dateTextView"
                     android:layout_width="wrap_content"
@@ -87,6 +89,15 @@
                     android:layout_marginLeft="110dp"
                     android:text="조회수"
                     android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/tb_noticelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="목록"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@color/blue"/>
 
         </FrameLayout>
 

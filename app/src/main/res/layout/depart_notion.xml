@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".firstpage">
+    tools:context=".MainActivity">
 
 
     <Button
@@ -48,7 +48,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-         />
+        />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -60,92 +60,13 @@
         app:layout_constraintTop_toBottomOf="@+id/dv_dn">
 
         <LinearLayout
+            android:id="@+id/noticeButtonContainer"
+            android:contentDescription="여기에 버튼 추가"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:orientation="vertical">
 
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:text="학과 공지 제목1 / 작성자 / 작성일 / 조회수" />
-
-
-            <!--DB연동을 해야할 것 같은데요.. ?-->
 
         </LinearLayout>
 
