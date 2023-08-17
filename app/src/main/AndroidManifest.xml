@@ -37,7 +37,8 @@
         <activity android:name=".mylist"/>
         <activity android:name=".buynotice"/>
         <activity android:name=".signin"/>
-        <activity android:name=".login"/>
+        <activity android:name=".login" />
+        <activity android:name=".firstpage"/>
 
 
     </application>
