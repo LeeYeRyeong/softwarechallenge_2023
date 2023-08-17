@@ -255,7 +255,7 @@
                     android:id="@+id/tv_phonenum"
                     android:textSize="12sp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/round_squre"
                     android:padding="10dp"

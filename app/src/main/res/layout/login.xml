@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="로그인"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="@id/et_loginEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/et_loginEmail"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:hint="e-mail"
+            app:layout_constraintBottom_toBottomOf="@id/et_loginPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_loginTitle" />
+
+
+        <EditText
+            android:id="@+id/et_loginPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:hint="비밀번호"
+            app:layout_constraintBottom_toBottomOf="@id/bt_loginSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_loginEmail" />
+
+        <Button
+            android:id="@+id/bt_loginSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제출"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_loginPassword"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

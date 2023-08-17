@@ -98,16 +98,6 @@
             app:layout_constraintStart_toStartOf="@id/authorTextView"
             app:layout_constraintTop_toBottomOf="@id/line69" />
 
-        <TextView
-            android:id="@+id/viewsTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
-            android:layout_marginEnd="264dp"
-            android:text="조회수"
-            android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/line69" />
 
         <ImageView
             android:id="@+id/line70"
@@ -133,12 +123,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/line70" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/subrec"
             android:layout_width="379dp"
             android:layout_height="51dp"
             android:layout_marginTop="16dp"
             android:elevation="0dp"
+            android:contentDescription="bt_app"
             android:src="@drawable/subrec"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.509"
