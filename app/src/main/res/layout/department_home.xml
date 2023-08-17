@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginTop="10dp">
+
+    <ImageButton
+        android:id="@+id/ib_maincardnews"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="57dp"
+        android:src="@drawable/departmentex1"
+        app:layout_constraintBottom_toTopOf="@+id/hv_schoolhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="cardnews"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="369dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="363dp"
+        android:background="@drawable/view_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_maincardnews" />
+
+    <TextView
+        android:id="@+id/tv_memo"
+        android:layout_width="344dp"
+        android:layout_height="18dp"
+        android:text="학과 별 공지사항"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/hv_schoolhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:contentDescription="학과별 공구 보는 화면"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ib_thumdnail"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="18dp"
+                    android:src="@drawable/homeex2"
+                    android:contentDescription="cardnews"/>
+
+                <ProgressBar
+                    android:id="@+id/FulfillmentRate"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:progressDrawable="@drawable/progressbar_bold"
+
+                    />
+
+                <Button
+                    android:id="@+id/tb_gobuy"
+                    android:layout_width="118dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="3dp"
+                    android:text="학잠 공구"
+                    android:background="@color/green"
+                    android:contentDescription="button"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            >
+
+            <ImageButton
+                android:id="@+id/ib_gocategory"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:contentDescription="category"
+                app:srcCompat="@drawable/category"
+                android:background="@color/blue"/>
+
+            <ImageButton
+                android:id="@+id/ib_goschool"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:contentDescription="sch"
+                app:srcCompat="@drawable/schoolhome"
+                android:background="@color/blue"/>
+
+            <ImageButton
+                android:id="@+id/ib_godepartment"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:contentDescription="dph"
+                android:background="@color/blue"
+                app:srcCompat="@drawable/imac" />
+
+            <ImageButton
+                android:id="@+id/ib_gouser"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:contentDescription="user"
+                android:background="@color/blue"
+                app:srcCompat="@drawable/user" />
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="192dp"
+        android:textColor="@color/black"
+        android:text="결제"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="9dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="BackButton"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:id="@+id/ll_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sellinfm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/tv_sellepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_productinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="뽀룡이 학잠\n금액:59,000"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_productselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/ll_t">
+
+                <Button
+                    android:id="@+id/bt_ps1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edge"
+                    android:paddingLeft="110dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="110dp"
+                    android:paddingBottom="5dp"
+                    android:text="XS 사이즈"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/bt_ps2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edge"
+                    android:paddingLeft="110dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="110dp"
+                    android:paddingBottom="5dp"
+
+                    android:text="S 사이즈"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/bt_ps3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edge"
+                    android:paddingLeft="110dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="110dp"
+                    android:paddingBottom="5dp"
+                    android:text="M 사이즈"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/bt_ps4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edge"
+                    android:paddingLeft="110dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="110dp"
+                    android:paddingBottom="5dp"
+                    android:text="L 사이즈"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/bt_ps5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edge"
+                    android:paddingLeft="110dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="110dp"
+                    android:paddingBottom="5dp"
+                    android:text="XL 사이즈"
+                    android:textColor="@color/black" />
+
+                <!--아니진짜여기부터 뭘해도 거지같아집니다......하............도와주세요-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_optionPrice"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edge"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_op1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edge"
+
+                    android:text="옵션 누른거 여기뜸" />
+
+                <EditText
+                    android:id="@+id/tv_op2"
+                    android:layout_width="63dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="수량"
+
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_op3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+
+                    android:background="@drawable/edge"
+                    android:text="가격" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="291dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:contentDescription="Bt"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <LinearLayout
+                android:id="@+id/tv_totalPrice"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/edge">
+
+                <TextView
+                    android:id="@+id/tv_tp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edge"
+                    android:text="가격" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buyinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_seller_s"
+                    android:layout_width="287dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_squre"
+                    android:padding="10dp"
+                    android:text="2023/11/11까지 입금을 완료해주시기 바랍니다\n123-1234576-12345 신한 홍길동"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_squre"
+                    android:padding="10dp"
+                    android:text="입금자명/학번을 입력해주세요"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/tv_phonenum"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_squre"
+                    android:padding="10dp"
+                    android:text="전화번호를 입력해주세요" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <EditText
+                        android:id="@+id/textViewAddress"
+                        android:layout_width="204dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="주소를 입력해주세요"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="67dp"
+                        android:elevation="1dp"/>
+
+                    <ImageView
+                        android:id="@+id/mectangle1"
+                        android:layout_width="354dp"
+                        android:layout_height="107dp"
+                        android:layout_below="@id/textViewAddress"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-74dp"
+                        android:elevation="0dp"
+                        android:src="@drawable/mectangle1" />
+
+                    <EditText
+                        android:id="@+id/textViewDepositTime"
+                        android:layout_width="204dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@id/mectangle1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-20dp"
+                        android:layout_weight="1"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="입금 시간을 입력해주세요"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/mectangle2"
+                        android:layout_width="354dp"
+                        android:layout_height="107dp"
+                        android:layout_below="@id/textViewDepositTime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-72dp"
+                        android:elevation="0dp"
+                        android:src="@drawable/mectangle2" />
+
+                    <EditText
+                        android:id="@+id/textViewAccountNumber"
+                        android:layout_width="204dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="계좌번호를 입력해주세요"
+                        android:textSize="12sp"
+                        android:layout_below="@id/mectangle2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:elevation="1dp" />
+
+                    <ImageView
+                        android:id="@+id/mectangle3"
+                        android:layout_width="354dp"
+                        android:layout_height="107dp"
+                        android:layout_below="@id/textViewAccountNumber"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-69dp"
+                        android:elevation="0dp"
+                        android:src="@drawable/mectangle3" />
+
+                    <EditText
+                        android:id="@+id/textViewSellerNote"
+                        android:layout_width="312dp"
+                        android:layout_height="51dp"
+                        android:layout_below="@id/mectangle3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-16dp"
+                        android:layout_weight="1"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="기타 판매자에게 전달하고자 하는 말이 있으면 작성해주세요"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/mectangle4"
+                        android:layout_width="354dp"
+                        android:layout_height="144dp"
+                        android:layout_below="@id/textViewSellerNote"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-79dp"
+                        android:elevation="0dp"
+                        android:src="@drawable/mectangle4" />
+
+                    <TextView
+                        android:id="@+id/gjfkr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mectangle1"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="267dp"
+                        android:layout_marginEnd="-453dp"
+                        android:layout_toStartOf="@id/gectangle2"
+                        android:layout_toEndOf="@id/gectangle1"
+                        android:elevation="1dp"
+                        android:text="개인정보 제 3자 제공 동의\n구매 유의사항 확인"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/gectangle1"
+                        android:layout_width="50dp"
+                        android:layout_height="17dp"
+                        android:layout_below="@id/mectangle4"
+                        android:layout_marginTop="29dp"
+                        android:layout_marginEnd="-53dp"
+                        android:layout_toStartOf="@id/line"
+                        android:elevation="1dp"
+                        android:src="@drawable/gectangle1" />
+
+                    <ImageView
+                        android:id="@+id/gectangle2"
+                        android:layout_width="50dp"
+                        android:layout_height="17dp"
+                        android:layout_below="@id/mectangle4"
+                        android:layout_marginStart="-287dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@id/line"
+                        android:elevation="1dp"
+                        android:src="@drawable/gectangle2" />
+
+                    <FrameLayout
+                        android:layout_width="268dp"
+                        android:layout_height="133dp"
+                        android:layout_below="@id/gectangle2"
+                        android:layout_marginTop="101dp"
+                        android:elevation="1dp"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:id="@+id/rrectangle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rrectangle" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textViewCompleted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="입금완료"
+                                android:textSize="40sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textViewClick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Click"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                    <ImageView
+                        android:id="@+id/line"
+                        android:layout_width="359dp"
+                        android:layout_height="122dp"
+                        android:layout_below="@id/textViewSellerNote"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="49dp"
+                        android:elevation="0dp"
+                        android:src="@drawable/line" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
