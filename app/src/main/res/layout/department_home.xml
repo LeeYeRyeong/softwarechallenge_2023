@@ -143,7 +143,7 @@
                 android:background="@color/blue"
                 android:contentDescription="user"
                 app:srcCompat="@drawable/user" />
-                app:srcCompat="@drawable/user" />
+
         </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
