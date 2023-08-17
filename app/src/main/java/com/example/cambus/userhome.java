@@ -46,7 +46,7 @@ public class userhome extends AppCompatActivity {
         goschool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(userhome.this,MainActivity.class);
+                Intent intent = new Intent(userhome.this,firstpage.class);
                 startActivity(intent);
 
             }

@@ -36,6 +36,9 @@
         <activity android:name=".paymentcheck"/>
         <activity android:name=".mylist"/>
         <activity android:name=".buynotice"/>
+        <activity android:name=".signin"/>
+        <activity android:name=".login"/>
+
 
     </application>
 
