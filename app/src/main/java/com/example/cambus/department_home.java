@@ -29,7 +29,7 @@ public class department_home extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(department_home.this, departmentnoticego.class);
+                Intent intent = new Intent(department_home.this, departmentnotice.class);
                 startActivity(intent);
 
             }
