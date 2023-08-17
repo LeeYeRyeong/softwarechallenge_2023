@@ -8,12 +8,16 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class department_home extends AppCompatActivity {
+import com.example.cambus.R;
+import com.example.cambus.department_home;
+import com.example.cambus.fristbuyActivity;
+import com.example.cambus.schoolnoticegoActivity;
+import com.example.cambus.userhome;
 
-    private ImageButton button;
+public class firstpage extends AppCompatActivity {
+    private Button button;
     private ImageButton button1;
-    private Button button2; //학교공지로 가는 버튼
-
+    private ImageButton button2; //학교공지로 가는 버튼
 
     private ImageButton gouser;
     private ImageButton godepartment;
@@ -22,40 +26,44 @@ public class department_home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.department_home);
+        setContentView(R.layout.school_home);
 
-        button = findViewById(R.id.ib_maincardnews);
+
+        button = findViewById(R.id.choice);
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(department_home.this, departmentnoticego.class);
+                Intent intent = new Intent(firstpage.this, fristbuyActivity.class);
                 startActivity(intent);
 
             }
         });
-        button1 =findViewById(R.id.ib_thumdnail);
+
+        button1 = findViewById(R.id.ib_gobuy);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(department_home.this,fristbuyActivity.class);
+                Intent intent = new Intent(firstpage.this, fristbuyActivity.class);
                 startActivity(intent);
             }
         });
-        button2 = findViewById(R.id.tb_gobuy);
+
+        button2 = findViewById(R.id.ib_maincardnews);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(department_home.this,fristbuyActivity.class);
+                Intent intent = new Intent(firstpage.this, schoolnoticegoActivity.class);
                 startActivity(intent);
             }
         });
+
 
         goschool = findViewById(R.id.ib_goschool);
         goschool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(department_home.this,firstpage.class);
+                Intent intent = new Intent(firstpage.this,firstpage.class);
                 startActivity(intent);
 
             }
@@ -65,7 +73,7 @@ public class department_home extends AppCompatActivity {
         godepartment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(department_home.this,department_home.class);
+                Intent intent = new Intent(firstpage.this, department_home.class);
                 startActivity(intent);
             }
         });
@@ -74,7 +82,7 @@ public class department_home extends AppCompatActivity {
         gouser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(department_home.this,userhome.class);
+                Intent intent = new Intent(firstpage.this, userhome.class);
                 startActivity(intent);
             }
         });
