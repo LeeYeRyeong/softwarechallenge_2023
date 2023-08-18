@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class department_home extends AppCompatActivity {
@@ -19,6 +21,7 @@ public class department_home extends AppCompatActivity {
     private ImageButton godepartment;
     private ImageButton goschool;
 
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,5 +82,18 @@ public class department_home extends AppCompatActivity {
             }
         });
 
+        imageView =findViewById(R.id.ib_maincardnews);
+
+        Intent intent = getIntent();
+        if (intent != null) {
+            String image = intent.getStringExtra("image");
+
+
+            if (image != null) {
+                Picasso.get().load(image).into(imageView);
+            }
+        }
     }
 }
+
+

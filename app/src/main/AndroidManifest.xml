@@ -46,6 +46,10 @@
         <activity android:name=".buy_department"/>
         <activity android:name=".buy_school"/>
         <activity android:name=".edit_buy"/>
+        <activity android:name=".RegisterRequest"/>
+        <activity android:name=".LoginRequest"/>
+
+
 
 
     </application>
